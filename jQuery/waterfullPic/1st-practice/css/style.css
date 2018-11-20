@@ -1,0 +1,22 @@
+/* 
+* @Author: anchen
+* @Date:   2018-10-12 10:49:14
+* @Last Modified by:   anchen
+* @Last Modified time: 2018-10-12 13:43:11
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    position: relative;
+    float:left;
+}
+.content{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.content img{
+    width: 180px;
+    height: auto;
+}

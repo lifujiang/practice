@@ -1,0 +1,293 @@
+/*
+* @Author: shen
+* @Date:   2018-10-29 10:28:09
+* @Last Modified by:   shen
+* @Last Modified time: 2018-10-29 16:12:12
+*/
+
+/* °æÐÄ */
+
+.jd{
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+body{
+	background: #f5f5f5;
+}
+
+/* ËÑË÷ */
+
+.search{
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 1000;
+}
+.search .search_box{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	height: 40px;
+	position: relative;
+	background: rgb(209, 55, 56);
+	padding-left: 70px;
+	padding-right: 50px;
+}
+.search .search_box a .icon_logo{
+	width: 60px;
+	height: 30px;
+	background-position: 0px -103px;
+	position: absolute;
+	left: 10px;
+	top: 3px;
+}
+.search .search_box form{
+	width: 100%;
+}
+.search .search_box form .icon_search{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	left: 80px;
+	background-position: -60px -110px;
+}
+.search .search_box form input{
+	width: 100%;
+	height: 30px;
+	border-radius: 15px;
+	margin-top: 5px;
+	padding-left: 40px;
+}
+.search .search_box a .login{
+	width: 50px;
+	height: 30px;
+	position: absolute;
+	line-height: 30px;
+	margin-top: 5px;
+	right: 0;
+	top: 0;
+	text-align: center;
+	color: #fff;
+}
+
+/* ÂÖ²¥Í¼ */
+
+.banner{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.banner ul:first-of-type{
+	width: 1000%;
+	transform: translateX(-10%);
+	-webkit-transform: translateX(-10%);
+}
+.banner ul:first-of-type li{
+	width: 10%;
+	float: left;
+}
+.banner ul:first-of-type li a,
+.banner ul:first-of-type li a img{
+	width: 100%;
+	display: block;
+}
+.banner ul:last-of-type{
+	position: absolute;
+	left: 50%;
+	bottom: 6px;
+	width: 118px;
+	height: 6px;
+	margin-left: -59px;
+}
+.banner ul:last-of-type li{
+	width: 6px;
+	height: 6px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	margin-left: 10px;
+	float: left;
+}
+.banner ul:last-of-type li:first-of-type{
+	margin-left: 0;
+}
+.nowlight{
+	background: #fff;
+}
+
+/* ?????? */
+
+.nav{
+	width: 100%;
+	border-bottom: 1px solid #aaa;
+	background: #fff;
+}
+.nav ul{
+	width: 100%;
+	height: 100%;
+	padding: 10px 0;
+}
+.nav ul li{
+	width: 25%;
+	height: 50%;
+	float: left;
+}
+.nav ul li a{
+	width: 40px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.nav ul li a img{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin-bottom: 5px;
+}
+.nav ul li a p{
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+/* ��Ʒ�� */
+
+.product{
+	width: 100%;
+}
+.product .product_box{
+	width: 100%;
+	box-shadow: 0 0 2px #aaa;
+	margin-top: 10px;
+}
+.product .product_box .tit{
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+}
+.product .product_box .tit:first-of-type.nb{
+	border-bottom: none;
+}
+.product .product_box .tit .clock{
+	background: url('../../images/seckill-icon.png') no-repeat 0 0 /20px 25px;
+	width: 20px;
+	height: 25px;
+	float: left;
+	margin-top: 5px;
+}
+.product .product_box .tit .secword{
+	color: rgb(209,55,56);
+	font-size: 16px;
+	line-height: 35px;
+	text-align: center;
+	float: left;
+}
+.product .product_box .tit .time{
+	float: left;
+	margin-top: 10px;
+}
+.product .product_box .tit .time li{
+	float: left;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	color: #fff;
+	background: #000;
+	margin-left: 2px;
+	text-align: center;
+}
+.product .product_box .tit .time li:nth-of-type(3n){
+	background: #fff;
+	color: #000;
+	width: 3px;
+	height: 3px;
+}
+.product .product_box .tit .more{
+	float: right;
+	font-size: 15px;
+	line-height: 35px;
+	text-align: center;
+}
+.product .product_box .seckill{
+	background: #fff;
+	width: 100%;
+	padding: 10px 0px;
+}
+.product .product_box .seckill .con{
+	width: 100%;
+}
+.product .product_box .seckill .con ul{
+	width: 100%;
+}
+.product .product_box .seckill .con ul li{
+	width: 33.3333%;
+	float: left;
+}
+.product .product_box .seckill .con ul li a{
+	width: 100%;
+	display: block;
+}
+.product .product_box .seckill .con ul li a img{
+	width: 100%;
+	display: block;
+	border-right: 1px solid #ccc;
+	padding: 0 40px;
+}
+.product .product_box .seckill .con ul li:last-of-type a img{
+	border-right: none;
+}
+.product .product_box .seckill .con ul li .newPrice{
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+	color: rgb(209,55,56);
+}
+.product .product_box .seckill .con ul li .oldPrice{
+	margin: 0 auto;
+	text-decoration: line-through;
+	margin-top: 10px;
+	color: #333;
+	text-align: center;
+}
+
+.product .product_box .tit .sameword{
+	font-size: 16px;
+	margin-left: 10px;
+	line-height: 35px;
+	text-align: center;
+}
+.product .product_box .tit .sameword::before{
+	content: "";
+	display: block;
+	float: left;
+	width: 3px;
+	height: 15px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background: rgb(209,55,56);
+}
+.product .product_box .samestyle{
+	width: 100%;
+}
+.product .product_box .samestyle .con{
+	width: 100%;
+	background: #fff;
+}
+.wh{
+	width: 50%;
+	display: block;
+}
+.wh img{
+	width: 100%;
+	display: block;
+}
+.br{
+	border-right: 1px solid #ccc;
+}
+.bb{
+	border-bottom: 1px solid #ccc;
+}

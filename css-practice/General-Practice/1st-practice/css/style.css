@@ -1,0 +1,174 @@
+/* 
+* @Author: anchen
+* @Date:   2018-10-15 12:49:03
+* @Last Modified by:   anchen
+* @Last Modified time: 2018-10-17 14:08:17
+*/
+/*初始化*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body{
+    font-size: 12px;
+    background-color:#f0f0f0;
+    text-decoration: none;
+}
+
+
+a:link,a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+
+/*全局设置*/
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+.red{color: red;}
+.blue{color: blue;}
+.skyblue{color: #6BADE9;}
+.bred{color: #D30000;}
+
+/*js联动*/
+.menu{
+    background: url(../../images/menu2.gif);
+}
+
+.menu1 a:hover{
+    background: url(../../images/menu1.gif);
+}
+
+.menu2 a:hover{
+    background: url(../../images/menu2.gif);
+}
+
+/*整体功能*/
+.container{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
+    /*头部*/
+.header .topword{
+    padding: 4px 8px;
+}
+
+.header .topword ul{
+    position: absolute;
+    top: 2%;
+    right: 0;
+}
+
+.header .topword li{
+    float: right;
+}
+
+.header .topword a{
+    padding: 0 10px;
+    border-right: 1px dotted black;
+}
+
+.header .topword a:hover{
+    color: red;
+}
+
+.header{
+    height: 196px;
+    background: url(../../images/bg-body.gif);
+    position: relative;
+}
+
+.header .logo{
+    width: 202px;
+    height: 76px;
+    background: url(../../images/logo.gif);
+    position: absolute;
+    top: 25%;
+}
+
+.header .top{
+    width: 958px;
+    height: 102px;
+    background: url(../../images/bg-logo.jpg);
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+}
+
+.header .topcenter{
+    
+}
+
+.header .topright{
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.header .topright img{
+    width: 458px;
+    height: 90px;
+}
+
+.header .php{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b81ed;
+}
+
+.header table{
+    font-size: 10px;
+}
+
+.header .school1{
+    position: absolute;
+    left: 25%;
+    top: 40%;
+}
+
+.header .school2{
+    position: absolute;
+    left: 25%;
+    top: 55%;
+}
+
+.header td{
+    width: 85px;
+    padding: 0 10px;
+    background: url(../../images/bg_xiala.png) no-repeat;
+}
+
+.header .xiala1{
+    background: url(../../images/bg_xiala1.png) no-repeat;
+}
+
+    /*导航栏*/
+
+.nav{
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+}
+
+
+.nav ul li{
+    float: left;
+    margin: 0 3px;
+}
+
+.nav a{
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    display: block;
+    color: white;
+}

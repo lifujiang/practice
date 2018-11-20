@@ -1,0 +1,29 @@
+/*
+* @Author: shen
+* @Date:   2018-10-20 09:40:51
+* @Last Modified by:   shen
+* @Last Modified time: 2018-10-20 10:22:48
+*/
+/* 初始化 */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+/* 全局 */
+
+
+/* 主要功能 */
+
+
+div{
+	margin: 300px auto;
+	width: 500px;
+	height: auto;
+	border: 10px solid red;
+	border-image-source: url('../../images/btn_bg.png');
+	border-image-slice: 10 fill;
+	border-image-width: 10px;
+}

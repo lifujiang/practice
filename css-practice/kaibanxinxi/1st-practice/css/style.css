@@ -1,0 +1,76 @@
+/* 
+* @Author: anchen
+* @Date:   2018-10-12 17:40:12
+* @Last Modified by:   anchen
+* @Last Modified time: 2018-10-17 14:05:10
+*/
+/*全局设置*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body{
+    font-size: 12px;
+    background-color: #fff;
+}
+
+
+a:link, a:visited{
+    color:#22ccff;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+}
+
+/*开班信息模块*/
+.container{
+    width: 295px;
+    background-color: #f0f0f0;
+    margin: 50px auto;
+    font-family: 宋体;
+}
+
+.header{
+    background-image: url("../../images/righttitle.gif");
+    height: 35px;
+    padding-left: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+}
+.content{
+    padding:10px 15px;
+}
+
+.content header{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.content section{
+    margin: 3px 0;
+}
+
+.content section li{
+    border-bottom: 1px dashed #ccc;
+    padding: 3px 0;
+}
+
+.red{
+    color:red;
+}
+
+.blue{
+    color:blue;
+}
+
+.content span{
+    font-weight: bold;
+}
+
+.fl{float: right;}

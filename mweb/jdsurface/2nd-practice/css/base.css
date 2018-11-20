@@ -1,0 +1,79 @@
+/*
+* @Author: shen
+* @Date:   2018-10-29 10:28:16
+* @Last Modified by:   shen
+* @Last Modified time: 2018-10-29 11:18:13
+*/
+
+/* reset */
+
+*,
+*::before,
+*::after{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	/* 相比第一次未记住 */
+	tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body{
+	font-size: 14px;
+	font-family: "Microsoft YaHei",sans-serif;
+	color: #333;
+}
+
+ul,
+ol{
+	list-style: none;
+}
+
+a{
+	color: #333;
+	text-decoration: none;
+}
+
+input,
+textarea{
+	/* 相比第一次未记住 */
+	border: none;
+	outline: none;
+	resize: none;
+	-webkit-appearance: none;
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.clear::before,
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+	/* 相比第一次未记住 */
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+.ml_10{ margin-left: 10px; }
+
+.mr_10{ margin-right: 10px; }
+
+.mt_10{ margin-top: 10px; }
+
+.mb_10{ margin-bottom: 10px; }
+
+*[class^="icon_"],
+*[class*=" icon_"]{
+	background-image: url('../../images/sprites.png');
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+}

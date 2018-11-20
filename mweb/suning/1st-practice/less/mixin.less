@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+// 适配函数
+.adapterMixin(@index) when (@index > 0) {
+    @width: extract(@adapterSizeList, @index);
+
+    @media (min-width: @width) {
+        html {
+            font-size: @baseFontSize / @psdSize * @width;
+        }
+    }
+    .adapterMixin(@index - 1);
+}
+
+//<------------ 兼容函数 ------------>
+
+// 边框圆角
+.border-radius(@radius){
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+}

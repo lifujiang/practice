@@ -1,0 +1,80 @@
+/* 
+* @Author: anchen
+* @Date:   2018-10-15 09:44:13
+* @Last Modified by:   anchen
+* @Last Modified time: 2018-10-15 12:22:13
+*/
+/*初始化*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #ccc;
+    font-size: 12px;
+}
+
+
+/*全局设计*/
+.fl{float: left;}
+.clear{clear: both;}
+.fr{float: right;}
+
+/*月福首页*/
+.container{
+    background-color: #fff;
+    width: 778px;
+    margin: 20px auto;
+
+}
+
+
+.header div, .nav img{float: left;}
+
+    /*产品展示区*/
+.show{
+    background-image: url("../images/line.jpg");
+    height: 230px;
+    width: 182px;
+}
+
+.show div{
+    padding: 20px;
+    text-align: center;
+}
+
+.show div img{
+    width: 141px;
+    height: 145px;
+}
+
+    /*月福新闻*/
+.news{height: 230px;}
+.news table{
+    padding: 15px 10px;
+    width: 400px;
+}
+
+.news tr{
+    width: 350px;
+}
+
+.news td{
+    height: 20px;
+    padding: 0 5px;
+}
+
+
+    /*产品销售排行*/
+.saletop{
+    background-color: #D30000;
+    color: white;
+    font-size: 11px;
+    font-family: 宋体;
+    height: 230px;
+}
+
+.saletop article{
+    padding: 3px 8px;
+}

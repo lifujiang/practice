@@ -1,0 +1,48 @@
+/* 
+* @Author: anchen
+* @Date:   2018-10-12 21:43:38
+* @Last Modified by:   anchen
+* @Last Modified time: 2018-10-13 00:48:32
+*/
+/*初始化*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.right{text-align: right;}
+.skyblue{color: #3fc2fa;}
+.red{color: red;}
+/*注册界面*/
+.container{
+    font-size: 15px;
+    width:1000px;
+    margin:10px auto;
+}
+
+.container table,td,th{
+    border: 1px solid #e0e0e0;
+}
+
+.container table{
+    border-collapse: collapse;
+    width:100%;
+}
+
+td,th{
+    height: 40px;
+    padding-left: 5px;
+}
+
+
+th{
+    height:30px;
+    text-align: left;
+    background-color: #f0f0f0;
+}
+
+input[type=text],input[type="passward"]{
+    height:23px;
+    width: 200px;
+    letter-spacing: 1px;
+}

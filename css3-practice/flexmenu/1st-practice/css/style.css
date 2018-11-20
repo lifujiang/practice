@@ -1,0 +1,40 @@
+/*
+* @Author: shen
+* @Date:   2018-10-22 17:56:45
+* @Last Modified by:   shen
+* @Last Modified time: 2018-10-22 18:15:14
+*/
+/* 初始化 */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/* 全局 */
+
+
+/* 菜单 */
+
+div{
+	width: 500px;
+	height: 300px;
+	margin: 100px auto;
+	border: 2px solid red;
+
+}
+
+div > ul{
+	list-style: none;
+	width: 100%;
+	height: 40px;
+	display: flex;
+}
+
+div > ul > li{
+	height: 100%;
+	line-height: 40px;
+	text-align: center;
+	background: rgb(0, 222, 158);
+	flex: 1;
+}

@@ -1,0 +1,124 @@
+/*
+* @Author: shen
+* @Date:   2018-10-21 19:06:55
+* @Last Modified by:   shen
+* @Last Modified time: 2018-10-21 21:33:39
+*/
+
+/* 初始化 */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/* 全局 */
+
+/* 共用 */
+
+.cover,
+.center{
+	border-radius: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.cover,
+.hour,
+.minute,
+.second,
+.center{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.hour,
+.minute,
+.second{ transform-origin: bottom center; }
+
+/* 时钟 */
+
+.clock{
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	border: 10px solid #ccc;
+	margin: 300px auto;
+	position: relative;
+}
+
+.line{
+	width: 8px;
+	height: 300px;
+	background: #ccc;
+	position: absolute;
+	left: 50%;
+	top: 0;
+}
+
+.line1,
+.line4{
+	width: 10px;
+}
+
+.line1{
+	transform: translate(-50%,0);
+}
+
+.line2{
+	transform: translate(-50%,0) rotate(30deg);
+}
+
+.line3{
+	transform: translate(-50%,0) rotate(60deg);
+}
+
+.line4{
+	transform: translate(-50%,0) rotate(90deg);
+}
+
+.line5{
+	transform: translate(-50%,0) rotate(120deg);
+}
+
+.line6{
+	transform: translate(-50%,0) rotate(150deg);
+}
+
+.cover{
+	width: 270px;
+	height: 270px;
+	background: #fff;
+}
+
+.hour{
+	width: 8px;
+	height: 80px;
+	background: red;
+	animation: clock 43200s linear infinite;
+}
+
+.minute{
+	width: 6px;
+	height: 100px;
+	background: green;
+	animation: clock 3600s linear infinite;
+}
+
+.second{
+	width: 4px;
+	height: 120px;
+	background: blue;
+	animation: clock 60s steps(60) infinite;
+}
+
+.center{
+	width: 30px;
+	height: 30px;
+	background: #ccc;
+}
+
+@keyframes clock{
+	0% { transform: translate(-50%,-100%) rotate(0); }
+	100%{ transform: translate(-50%,-100%) rotate(360deg); }
+}

@@ -1,0 +1,63 @@
+/* 
+* @Author: anchen
+* @Date:   2018-10-14 21:47:38
+* @Last Modified by:   anchen
+* @Last Modified time: 2018-10-14 23:53:25
+*/
+/*初始化设置*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    font-size: 12px;
+}
+
+
+/*全局设置*/
+.clear{clear: both;}
+.orange{color: orange;}
+.bred{
+    color:#a01b1b;
+    font-weight: bold;
+}
+
+.midline{
+    text-decoration: line-through;
+    color:grey;
+}
+
+/*今日闪价功能*/
+body{background-color: #ccc;}
+.container{
+    width: 750px;
+    background-color: #f0f0f0;
+    margin: 20px auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.head{
+    border-bottom: 2px solid orange;
+    padding: 5px 0;
+    margin: 0 5px;
+}
+
+.box{margin: 20px 15px;}
+
+.content{
+    float: left;
+    margin: 15px;
+}
+
+.img{
+    position: relative;
+}
+
+.xianshiqiang{
+    position: absolute;
+    right: -27px;
+    top: -27px;
+}

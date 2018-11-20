@@ -1,0 +1,54 @@
+/*
+* @Author: anchen
+* @Date:   2018-10-17 23:46:33
+* @Last Modified by:   anchen
+* @Last Modified time: 2018-10-18 21:31:58
+*/
+/*³õÊ¼»¯ÉèÖÃ*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Ðý×ªÆË¿ËÅÆ¹¦ÄÜ*/
+.box{
+    width: 200px;
+    height: 400px;
+    margin: 400px auto;
+    position: relative;
+    color: green;
+}
+
+.box > img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top right;
+    transition: transform 2s;
+}
+
+.box:hover > img:nth-of-type(1){
+    transform: rotate(60deg);
+}
+
+.box:hover > img:nth-of-type(2){
+    transform: rotate(120deg);
+}
+
+.box:hover > img:nth-of-type(3){
+    transform: rotate(180deg);
+}
+
+.box:hover > img:nth-of-type(4){
+    transform: rotate(240deg);
+}
+
+.box:hover > img:nth-of-type(5){
+    transform: rotate(300deg);
+}
+
+.box:hover > img:nth-of-type(6){
+    transform: rotate(360deg);
+}

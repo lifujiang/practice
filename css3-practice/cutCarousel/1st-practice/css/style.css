@@ -1,0 +1,108 @@
+/*
+* @Author: shen
+* @Date:   2018-10-24 13:16:10
+* @Last Modified by:   shen
+* @Last Modified time: 2018-10-24 14:30:57
+*/
+
+/* 初始化 */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*  */
+
+/* 切割轮播图 */
+
+.box{
+	width: 560px;
+	height: 300px;
+	margin: 100px auto;
+	position: relative;
+}
+
+.box > ul{
+	width: 100%;
+	height: 100%;
+	list-style: none;
+	transform-style: preserve-3d;
+	transform: rotate3d(1, 1, 0, 0deg);
+}
+
+.box > ul > li{
+	width: 20%;
+	height: 100%;
+	float: left;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.5s;
+}
+
+.box > ul > li > span{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.box > ul > li > span:nth-of-type(1){
+	background: url('../../images/q1.jpg');
+	transform: translateZ(150px);
+}
+
+.box > ul > li > span:nth-of-type(2){
+	background: url('../../images/q2.jpg');
+	transform: translateY(-150px) rotateX(90deg);
+}
+
+.box > ul > li > span:nth-of-type(3){
+	background: url('../../images/q3.jpg');
+	transform: translateZ(-150px) rotateX(180deg);
+}
+
+.box > ul > li > span:nth-of-type(4){
+	background: url('../../images/q4.jpg');
+	transform: translateY(150px) rotateX(-90deg);
+}
+
+.box > ul > li:nth-of-type(2) > span{
+	background-position: -100% 0;
+}
+
+.box > ul > li:nth-of-type(3) > span{
+	background-position: -200% 0;
+}
+
+.box > ul > li:nth-of-type(4) > span{
+	background-position: -300% 0;
+}
+
+.box > ul > li:nth-of-type(5) > span{
+	background-position: -400% 0;
+}
+
+.prev,
+.next{
+	width: 50px;
+	height: 50px;
+	transform: translateZ(150px) translate(0,-50%);
+	position: absolute;
+	top: 50%;
+	font-size: 40px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	background: rgba(0, 0, 0, .5);
+}
+
+.prev{
+	left: 0;
+}
+
+.next{
+	right: 0;
+}

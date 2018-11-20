@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		div{
+			width: 882px;
+			height: 86px;
+			margin: 100px auto;
+			overflow: hidden;
+		}
+
+		div > ul{
+			width: 200%;
+			list-style: none;
+			animation-name: move;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		div:hover > ul{
+			cursor: pointer;
+			animation-play-state: paused;
+		}
+
+		div > ul > li{
+			width: 126px;
+			float: left;
+		}
+
+		@keyframes move{
+			0%{transform: translateX(0);}
+			100%{transform: translateX(-882px)}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li><img src="../images/1.jpg"></li>
+			<li><img src="../images/2.jpg"></li>
+			<li><img src="../images/3.jpg"></li>
+			<li><img src="../images/4.jpg"></li>
+			<li><img src="../images/5.jpg"></li>
+			<li><img src="../images/6.jpg"></li>
+			<li><img src="../images/7.jpg"></li>
+			<li><img src="../images/1.jpg"></li>
+			<li><img src="../images/2.jpg"></li>
+			<li><img src="../images/3.jpg"></li>
+			<li><img src="../images/4.jpg"></li>
+			<li><img src="../images/5.jpg"></li>
+			<li><img src="../images/6.jpg"></li>
+			<li><img src="../images/7.jpg"></li>
+		</ul>
+	</div>
+	<!-- diy环节 -->
+	<div class="btnbox">
+		<input type="button" name="" id="rbtn" value="开始">
+		<input type="button" name="" id="pbtn" value="暂停">
+	</div>
+</body>
+</html>
