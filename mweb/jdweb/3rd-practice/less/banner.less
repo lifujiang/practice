@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.banner{
+	width: 100%;
+	max-height: 350px;
+	overflow: hidden;
+	position: relative;
+}
+.banner .banner_img_box{
+	width: 1000%;
+	.transform(translateX(-640px));
+}
+.banner .banner_img_box li{
+	width: 10%;
+	float: left;
+}
+.banner .banner_img_box li img{
+	display: block;
+	width: 100%;
+}
+.banner .banner_img_spot{
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	.transform(translateX(-50%));
+	width: 118px;
+	height: 6px;
+}
+.banner .banner_img_spot li{
+	width: 6px;
+	height: 6px;
+	.border-radius(50%);
+	border: 1px solid #fff;
+	background: transparent;
+	float: left;
+}
+.banner .banner_img_spot li:not(:first-of-type){
+	margin-left: 10px;
+}
+
+.banner .banner_img_spot .active_spot{
+	background: #fff;
+}

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+//////////
+// 全局属性 //
+//////////
+
+// 定位
+.por(){
+	position: relative;
+}
+
+.pof(){
+	position: fixed;
+}
+
+.poa(){
+	position: absolute;
+}
+
+// display
+.db(){
+	display: block;
+}
+
+.dib(){
+	display: inline-block;
+}
+
+.di(){
+	display: inline;
+}
+
+// 容器居中
+.mc(@top:0){
+	margin: 0 auto;
+}
+.tac(){
+	text-align: center;
+}
+
+// 宽高
+.w(@w:100%){
+	width: @w;
+}
+
+
+//////////
+// 兼容封装 //
+//////////
+
+.border-radius(@radius){
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+}
+
+.transform(@transform){
+	transform: @transform;
+	-webkit-transform: @transform;
+}
