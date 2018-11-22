@@ -2,7 +2,7 @@
 * @Author: shen
 * @Date:   2018-11-17 12:12:36
 * @Last Modified by:   lifujiang
-* @Last Modified time: 2018-11-22 00:46:01
+* @Last Modified time: 2018-11-22 10:16:07
 */
 
 $(function(){
@@ -32,8 +32,8 @@ var header_scroll = function(){
 /////////
 var swiper = function(){
 	var index = 1;
-	var imgbox = $('.banner_img_box');
-	var width = $('.banner_img_box li').width();
+	var imgbox = $('#index_banner_img');
+	var width = $('#index_banner_img li').width();
 	// 封装动画效果函数
 	var setTransform = function(d){
 		return{
@@ -60,7 +60,6 @@ var swiper = function(){
 		index++;
 		imgbox.css(setTransition());
 		imgbox.css(setTransform(-index*width));
-		
 	},1000);
 	// 通过监听过渡完成时间,实现无缝衔接
 	imgbox.on('transitionend',function(){
@@ -79,7 +78,7 @@ var swiper = function(){
 			imgbox.css(setTransform(-index*width));
 		}
 		// 指示器无缝衔接
-		$('.banner_img_spot li:eq('+(index-1)+')').addClass('active_spot').siblings().removeClass('active_spot');
+		$('#index_banner_spot li:eq('+(index-1)+')').addClass('active_spot').siblings().removeClass('active_spot');
 	});
 	var startX = 0;
 	var distance = 0;
@@ -131,7 +130,7 @@ var countdown = function(){
 	// 初始化总时间和时、分、秒
 	var time = 3*3600;
 	var [h,m,s] = [0,0,0];
-	var li = $('.seckill_time li');
+	var li = $('#seckill_time li');
 	h = Math.floor(time / 3600);
 	m = Math.floor(time % 3600 / 60);
 	s = time % 60;

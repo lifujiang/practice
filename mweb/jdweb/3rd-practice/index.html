@@ -8,186 +8,203 @@
 	<title>京东移动端</title>
 </head>
 <body>
+	<div class="jd_mweb">
 	<!-- 顶部搜索框 -->
-	<header class="index_search" id="index_search">
-		<a href="#"><span class="icon_logo"></span></a>
-		<form>
-			<span class="icon_search"></span>
-			<input type="search" name="" placeholder="搜索">
-		</form>
-		<a href="#"><span class="login">登录</span></a>
-	</header>
-	<!-- 轮播图 -->
-	<section class="banner">
-		<ul class="banner_img_box clearFix">
-			<li><img src="../images/l8.jpg"></li>
-			<li><img src="../images/l1.jpg"></li>
-			<li><img src="../images/l2.jpg"></li>
-			<li><img src="../images/l3.jpg"></li>
-			<li><img src="../images/l4.jpg"></li>
-			<li><img src="../images/l5.jpg"></li>
-			<li><img src="../images/l6.jpg"></li>
-			<li><img src="../images/l7.jpg"></li>
-			<li><img src="../images/l8.jpg"></li>
-			<li><img src="../images/l1.jpg"></li>
-		</ul>
-		<ul class="banner_img_spot">
-			<li class="active_spot"></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</section>
-	<!-- 分类导航 -->
-	<nav class="category">
-		<ul>
-			<li>
-				<a href="#">
-					<img src="../images/nav0.png">
-					<span class="category_word">分类</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="../images/nav1.png">
-					<span class="category_word">分类</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="../images/nav2.png">
-					<span class="category_word">分类</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="../images/nav3.png">
-					<span class="category_word">分类</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="../images/nav4.png">
-					<span class="category_word">分类</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="../images/nav5.png">
-					<span class="category_word">分类</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="../images/nav6.png">
-					<span class="category_word">分类</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<img src="../images/nav7.png">
-					<span class="category_word">分类</span>
-				</a>
-			</li>
-		</ul>
-	</nav>
-	<!-- 产品区块 -->
-	<section class="product">
-		<section class="seckill">
-			<header>
-				<span class="seckill_icon"></span>
-				<span class="seckill_word">掌上秒杀</span>
-				<ul class="seckill_time">
-					<li>0</li>
-					<li>0</li>
-					<li>:</li>
-					<li>0</li>
-					<li>0</li>
-					<li>:</li>
-					<li>0</li>
-					<li>0</li>
-				</ul>
-				<span class="seckill_more">更多&gt;</span>
-			</header>
-			<main class="content clearFix">
-				<ul>
-					<li>
-						<a href="#">
-							<img src="../images/detail01.jpg">
-							<p class="newPrice">&yen;10.00</p>
-							<p class="oldPrice">&yen;100.00</p>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="../images/detail02.jpg">
-							<p class="newPrice">&yen;10.00</p>
-							<p class="oldPrice">&yen;100.00</p>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="../images/detail01.jpg">
-							<p class="newPrice">&yen;10.00</p>
-							<p class="oldPrice">&yen;100.00</p>
-						</a>
-					</li>
-				</ul>
-			</main>
+		<header class="index_search" id="index_search">
+			<!-- logo -->
+			<a href="#"><span class="icon_logo"></span></a>
+			<!-- 搜索图标与搜索框 -->
+			<form>
+				<span class="icon_search"></span>
+				<input type="search" name="" placeholder="搜索">
+			</form>
+			<!-- 登录 -->
+			<a href="#"><span class="login">登录</span></a>
+		</header>
+		<!-- 轮播图 -->
+		<section class="index_banner">
+			<!-- 轮播图图片 -->
+			<ul class="banner_img_box clearFix" id="index_banner_img">
+				<li><a href="#"><img src="../images/l8.jpg"></a></li>
+				<li><a href="#"><img src="../images/l1.jpg"></a></li>
+				<li><a href="#"><img src="../images/l2.jpg"></a></li>
+				<li><a href="#"><img src="../images/l3.jpg"></a></li>
+				<li><a href="#"><img src="../images/l4.jpg"></a></li>
+				<li><a href="#"><img src="../images/l5.jpg"></a></li>
+				<li><a href="#"><img src="../images/l6.jpg"></a></li>
+				<li><a href="#"><img src="../images/l7.jpg"></a></li>
+				<li><a href="#"><img src="../images/l8.jpg"></a></li>
+				<li><a href="#"><img src="../images/l1.jpg"></a></li>
+			</ul>
+			<!-- 轮播图记录器 -->
+			<ul class="banner_img_spot" id="index_banner_spot">
+				<li class="active_spot"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 		</section>
-		<section class="sameproduct">
-			<header>
-				<h3 class="headword">京东超市</h3>
-			</header>
-			<main class="content clearFix">
-				<a href="#" class="fl br">
-					<img src="../images/cp1.jpg">
-				</a>
-				<a href="#" class="fr bb">
-					<img src="../images/cp2.jpg">
-				</a>
-				<a href="#" class="fr ">
-					<img src="../images/cp3.jpg">
-				</a>
-			</main>
+		<!-- 分类导航 -->
+		<nav class="index_category">
+			<ul class="clearFix">
+				<li>
+					<a href="#">
+						<img src="../images/nav0.png">
+						<span class="category_word">分类</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../images/nav1.png">
+						<span class="category_word">分类</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../images/nav2.png">
+						<span class="category_word">分类</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../images/nav3.png">
+						<span class="category_word">分类</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../images/nav4.png">
+						<span class="category_word">分类</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../images/nav5.png">
+						<span class="category_word">分类</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../images/nav6.png">
+						<span class="category_word">分类</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../images/nav7.png">
+						<span class="category_word">分类</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- 产品区块 -->
+		<section class="index_product">
+			<!-- 秒杀区 -->
+			<section class="seckill">
+				<!-- 秒杀顶部 -->
+				<header>
+					<!-- 秒表图标 -->
+					<span class="seckill_icon"></span>
+					<!-- 秒杀文字 -->
+					<span class="seckill_word">掌上秒杀</span>
+					<!-- 秒杀倒计时 -->
+					<ul class="seckill_time clearFix" id="seckill_time">
+						<li>0</li>
+						<li>0</li>
+						<li>:</li>
+						<li>0</li>
+						<li>0</li>
+						<li>:</li>
+						<li>0</li>
+						<li>0</li>
+					</ul>
+					<!-- 更多 -->
+					<span class="seckill_more">更多&gt;</span>
+				</header>
+				<!-- 秒杀内容 -->
+				<main class="content">
+					<ul class="clearFix">
+						<li>
+							<a href="#">
+								<img src="../images/detail01.jpg">
+								<p class="newPrice">&yen;10.00</p>
+								<p class="oldPrice">&yen;100.00</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../images/detail02.jpg">
+								<p class="newPrice">&yen;10.00</p>
+								<p class="oldPrice">&yen;100.00</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../images/detail01.jpg">
+								<p class="newPrice">&yen;10.00</p>
+								<p class="oldPrice">&yen;100.00</p>
+							</a>
+						</li>
+					</ul>
+				</main>
+			</section>
+			<!-- 相同产品区一 -->
+			<section class="sameproduct">
+				<header>
+					<h3 class="headword">京东超市</h3>
+				</header>
+				<main class="content clearFix">
+					<a href="#" class="fl br">
+						<img src="../images/cp1.jpg">
+					</a>
+					<a href="#" class="fr bb">
+						<img src="../images/cp2.jpg">
+					</a>
+					<a href="#" class="fr ">
+						<img src="../images/cp3.jpg">
+					</a>
+				</main>
+			</section>
+			<!-- 相同产品区二 -->
+			<section class="sameproduct">
+				<header>
+					<h3 class="headword">京东自营</h3>
+				</header>
+				<main class="content clearFix">
+					<a href="#" class="fr">
+						<img src="../images/cp4.jpg">
+					</a>
+					<a href="#" class="fl bb br">
+						<img src="../images/cp5.jpg">
+					</a>
+					<a href="#" class="fl br">
+						<img src="../images/cp6.jpg">
+					</a>
+				</main>
+			</section>
+			<!-- 相同产品区三 -->
+			<section class="sameproduct">
+				<header>
+					<h3 class="headword">京东热门</h3>
+				</header>
+				<main class="content clearFix">
+					<a href="#" class="fl br">
+						<img src="../images/cp1.jpg">
+					</a>
+					<a href="#" class="fr bb">
+						<img src="../images/cp2.jpg">
+					</a>
+					<a href="#" class="fr ">
+						<img src="../images/cp3.jpg">
+					</a>
+				</main>
+			</section>
 		</section>
-		<section class="sameproduct">
-			<header>
-				<h3 class="headword">京东自营</h3>
-			</header>
-			<main class="content clearFix">
-				<a href="#" class="fr">
-					<img src="../images/cp4.jpg">
-				</a>
-				<a href="#" class="fl bb br">
-					<img src="../images/cp5.jpg">
-				</a>
-				<a href="#" class="fl br">
-					<img src="../images/cp6.jpg">
-				</a>
-			</main>
-		</section>
-		<section class="sameproduct">
-			<header>
-				<h3 class="headword">京东热门</h3>
-			</header>
-			<main class="content clearFix">
-				<a href="#" class="fl br">
-					<img src="../images/cp1.jpg">
-				</a>
-				<a href="#" class="fr bb">
-					<img src="../images/cp2.jpg">
-				</a>
-				<a href="#" class="fr ">
-					<img src="../images/cp3.jpg">
-				</a>
-			</main>
-		</section>
-	</section>
+	</div>
 
 	<!-- 引入js文件 -->
 	<script type="text/javascript" src="scripts/less.min.js"></script>
