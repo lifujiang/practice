@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>留言本</title>
+  <link rel='stylesheet' href='/public/lib/bootstrap/dist/css/bootstrap.css'>
+</head>
+<body>
+  <div class='container'>
+    <div class='header'>
+      <h1>留言板 <small>留言板评论</small></h1>
+      <a href="/post" class="btn btn-success">发表留言</a>
+      <hr>
+    </div>
+    <div class='content'>
+      <table class='table table-bordered'>
+        {{ each data }}
+        <tr>
+          <td>{{ $value.name }} : {{ $value.comment }}</td>
+          <td class='right'>{{ $value.dateTime }}</td>
+        </tr>
+        {{ /each }}
+      </table>
+    </div>
+  </div>
+
+  <style type='text/css'>
+    .table-bordered th,
+    .table-bordered td {
+      border: none !important;
+    }
+    .table-bordered tr {
+      border: 1px solid #ddd !important;
+    }
+    .right{
+      float: right;
+    }
+  </style>
+</body>
+</html>
