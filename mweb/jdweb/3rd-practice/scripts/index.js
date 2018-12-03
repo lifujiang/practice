@@ -2,7 +2,7 @@
 * @Author: shen
 * @Date:   2018-11-17 12:12:36
 * @Last Modified by:   lifujiang
-* @Last Modified time: 2018-11-22 15:09:14
+* @Last Modified time: 2018-11-24 21:02:34
 */
 
 $(function () {
@@ -65,14 +65,14 @@ var swiper = function () {
   imgbox.on('transitionend', function () {
     // 自动轮播无缝衔接
     // 原理为当轮播图的最后一张图完成过渡效果，立即定位到第一张实现无缝衔接
-    if (index == 9) {
+    if (index === 9) {
       index = 1
       imgbox.css(removeTransition())
       imgbox.css(setTransform(-index * width))
     }
 
     // 手势操作无缝衔接
-    if (index == 0) {
+    if (index === 0) {
       index = 8
       imgbox.css(removeTransition())
       imgbox.css(setTransform(-index * width))
@@ -91,7 +91,7 @@ var swiper = function () {
   })
   imgbox.on('touchmove', function (e) {
     isMove = true
-    moveX = e.touches[0].clientX
+    var moveX = e.touches[0].clientX
     // 通过初始位置与移动位置得出移动距离
     distance = moveX - startX
     // 清除过渡并根据移动距离设置容器偏离
