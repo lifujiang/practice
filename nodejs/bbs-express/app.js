@@ -2,7 +2,7 @@
 * @Author: lifujiang
 * @Date:   2018-12-05 09:49:04
 * @Last Modified by:   lifujiang
-* @Last Modified time: 2018-12-07 10:39:39
+* @Last Modified time: 2018-12-08 14:41:56
 */
 
 // 引入模块
@@ -10,7 +10,8 @@ var express = require('express')
 var app = express()
 // 引入中间件
 var bodyParser = require('body-parser')
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 // 手动生成的假数据
 var comments = [
@@ -55,7 +56,7 @@ app.get('/post', function (req, res) {
 })
 
 // 使用 post方法 获取post.html表单数据
-app.post('/post', urlencodedParser, function (req, res) {
+app.post('/post', function (req, res) {
   var comment = req.body
   comment.dateTime = '2018-12-7 10:30:14'
   comments.unshift(comment)
