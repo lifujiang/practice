@@ -57,7 +57,11 @@
                   <td>{{ $value.id }}</td>
                   <td>{{ $value.name }}</td>
                   <td>{{ $value.age }}</td>
-                  <td>{{ $value.gender }}</td>
+                  {{ if $value.gender }}
+                    <td>male</td>
+                  {{ else }}
+                    <td>female</td>
+                  {{ /if }}
                   <td>{{ $value.hobbies }}</td>
                   <td>
                     <a href="/students/update?id={{ $value.id }}" class="glyphicon glyphicon-pencil"></a>

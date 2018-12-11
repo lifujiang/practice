@@ -50,10 +50,10 @@
             <div class="form-group">
               <label>gender</label>
               <label class="radio-inline">
-                <input type="radio" name="gender" value="1" checked> male
+                <input type="radio" name="gender" value="1" {{ if students.gender }} checked {{ /if }}> male
               </label>
               <label class="radio-inline">
-                <input type="radio" name="gender" value="0"> female
+                <input type="radio" name="gender" value="0" {{ if !students.gender }} checked {{ /if }}> female
               </label>
             </div>
             <div class="form-group">
